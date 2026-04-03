@@ -8,5 +8,10 @@
     "axios": "^1.13.6",
     "lucide-react": "^1.7.0",
     "react-router-dom": "^7.13.2"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "render-build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "seed": "node server/seed.js"
   }
 }
