@@ -25,7 +25,8 @@ if (process.env.NODE_ENV === 'production') {
     // Set static folder
     app.use(express.static(path.join(__dirname, '../client/dist')));
 
-    app.get('/:splat*', (req, res) => {
+    // Fallback for SPA routing: serve index.html for all other requests
+    app.use((req, res) => {
         res.sendFile(path.resolve(__dirname, '../client', 'dist', 'index.html'));
     });
 } else {
