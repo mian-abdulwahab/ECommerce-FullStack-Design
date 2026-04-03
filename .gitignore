@@ -1,0 +1,16 @@
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+*.log
+client/node_modules/
+server/node_modules/
+client/dist/
+server/dist/
+package-lock.json
+client/package-lock.json
+server/package-lock.json
+.idea/
+.vsc/
+.vscode/
